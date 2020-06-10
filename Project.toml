@@ -1,0 +1,7 @@
+name = "JsonDB"
+uuid = "190f4b3e-24b6-415b-80af-ebaa3e78d3e0"
+authors = ["Amey Narkhede <ameynarkhede02@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+JSON2 = "2535ab7d-5cd8-5a07-80ac-9b1792aadce3"
