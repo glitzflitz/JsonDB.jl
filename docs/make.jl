@@ -8,7 +8,7 @@ makedocs(;
 		 )
 
 deploydocs(
-    repo = "https://github.com/glitzflitz/JsonDB.jl.git",
+    repo = "github.com/glitzflitz/JsonDB.jl.git",
 )
 
 
