@@ -1,5 +1,8 @@
 # JsonDB
 
+# JsonDB
+[![Build Status](https://travis-ci.org/glitzflitz/JsonDB.jl.svg?branch=master)](https://travis-ci.org/glitzflitz/JsonDB.jl)
+
 JsonDB is a lightweight and simple key-value store written in Julia, heavily inspired by [Python's PickleDB](https://pythonhosted.org/pickleDB/)
 
 ## Example
@@ -20,6 +23,5 @@ julia> d.get(db, "fizz")
 julia> d.dump(db)
 true
 ```
-
 
 

@@ -9,7 +9,6 @@ makedocs(;
 
 deploydocs(
     repo = "https://github.com/glitzflitz/JsonDB.jl.git",
-    target = "build",
 )
 
 
