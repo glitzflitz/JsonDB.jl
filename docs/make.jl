@@ -7,9 +7,9 @@ makedocs(;
 		 authors="Amey Narkhede",
 		 )
 
-#deploydocs(
-#    repo = "https://github.com/glitzflitz/JsonDB.jl.git",
-#    target = "build",
-#)
+deploydocs(
+    repo = "https://github.com/glitzflitz/JsonDB.jl.git",
+    target = "build",
+)
 
 
