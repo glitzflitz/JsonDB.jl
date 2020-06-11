@@ -1,10 +1,11 @@
 module JsonDB
 
+export Database
 import Base.Threads.@spawn
 import JSON2
 
 """
-mutable struct Database
+`JsonDB.Database`
 
 This type holds instance of database
 """
@@ -167,9 +168,9 @@ end
 """
 `JsonDB.append(db::Database, key, more)`
 
-Adds `more` of `keys`'s value
+Adds `more` to `keys`'s value
 """
-function append(db, key, more)
+function append(db::Database, key, more)
 	tmp = db.db[key]
 	db.db[key] = tmp * more
 	_autodump(db)
