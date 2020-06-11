@@ -1,7 +1,5 @@
 module JsonDB
 
-export Database
-
 import Base.Threads.@spawn
 import JSON2
 
@@ -69,7 +67,6 @@ end
 Force dump databse to memory
 """
 function dump(db::Database)
-	_dump(db)
 	db.thread = @spawn _dump(db)
 	fetch(db.thread)
 	return true
