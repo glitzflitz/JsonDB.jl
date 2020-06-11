@@ -10,8 +10,6 @@ makedocs(;
 deploydocs(
     repo = "github.com/glitzflitz/JsonDB.jl.git",
 	target="build",
-	devurl = "dev",
-	versions = ["stable" => "v^", "v#.#", devurl => devurl],
 )
 
 
