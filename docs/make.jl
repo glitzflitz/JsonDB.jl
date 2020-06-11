@@ -3,6 +3,10 @@ using Documenter, JsonDB
 
 makedocs(;
 		 modules=[JsonDB],
+		 format = Documenter.HTML(
+		    canonical = "https://glitzflitz.github.io/JsonDB.jl/stable/",
+		 ),
+
 		 sitename="JsonDB.jl",
 		 authors="Amey Narkhede",
 		 )
@@ -10,7 +14,6 @@ makedocs(;
 deploydocs(
     repo = "github.com/glitzflitz/JsonDB.jl.git",
 	target="build",
-	latest = "master",
 )
 
 
