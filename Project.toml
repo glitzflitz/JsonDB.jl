@@ -8,3 +8,4 @@ JSON2 = "2535ab7d-5cd8-5a07-80ac-9b1792aadce3"
 
 [compat]
 julia = "1"
+JSON2 = "0.3"
