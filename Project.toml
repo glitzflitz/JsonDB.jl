@@ -4,8 +4,8 @@ authors = ["Amey Narkhede <ameynarkhede02@gmail.com>"]
 version = "0.1.0"
 
 [deps]
-JSON2 = "2535ab7d-5cd8-5a07-80ac-9b1792aadce3"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
 
 [compat]
 julia = "1"
-JSON2 = "0.3"
+JSON3 = "1"

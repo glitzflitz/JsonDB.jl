@@ -2,7 +2,7 @@ module JsonDB
 
 export Database
 import Base.Threads.@spawn
-import JSON2
+import JSON3
 
 """
 `JsonDB.Database`
@@ -56,7 +56,7 @@ function _load(db::Database, path, auto_dump)
 end
 
 function _dump(db::Database)
-	json = JSON2.write(db.db)
+	json = JSON3.write(db.db)
 	open(db.path, "w") do file
 		write(file, json)
 	end
@@ -74,14 +74,14 @@ function dump(db::Database)
 end
 
 function _loaddb(db::Database)
-	try
 		file = open(db.path, "r")
-		JSON2.read(file, db.db)
+	try
+		db.db = JSON3.read(file, Dict)
 	catch err
 		if filesize(file) == 0
 			db.db = Dict()
-		elseif isa(err, JSON2.Parsers.Error)
-			throw(JSON2.Parsers.Error)
+		elseif isa(err, JSON3.Error)
+			throw(err)
 		else
 			error("Failed to read JSON")
 		end
